@@ -4,27 +4,272 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Zaragoza Boxing</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Puedes usar estilos comunes si lo deseas -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="page-container">
+        <!-- Navigation -->
+        <nav class="navbar scrolled" id="navbar">
+            <div class="nav-container">
+                <div class="logo">Zaragoza Boxing</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobreNosotros.html">Nosotros</a></li>
+                    <li><a href="clases.html">Clases</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
 
-<header>
-    <h1>Contacto</h1>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="sobre_nosotros.html">Sobre Nosotros</a>
-        <a href="clases.html">Clases</a>
-    </nav>
-</header>
+        <!-- Hero Section -->
+        <section class="hero" style="height: 60vh;">
+            <div class="hero-content">
+                <h1 style="font-size: 3rem;">Contáctanos</h1>
+                <p>¡Estamos aquí para ayudarte a comenzar tu journey!</p>
+            </div>
+        </section>
 
-<section>
-    <h2>Contáctanos</h2>
-    <p>Puedes contactarnos a través de nuestro correo: info@zaragozaboxing.com</p>
-</section>
+        <!-- Contact Information -->
+        <section class="section fade-in">
+            <h2>Información de Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>📍 Ubicación</h3>
+                    <p><strong>Dirección:</strong> Av. Principal #123, Colonia Centro</p>
+                    <p><strong>Ciudad:</strong> Zaragoza, España</p>
+                    <p><strong>Código Postal:</strong> 50001</p>
+                    <br>
+                    
+                    <h3>📞 Teléfonos</h3>
+                    <p><strong>Principal:</strong> +34 976 123 456</p>
+                    <p><strong>WhatsApp:</strong> +34 654 321 987</p>
+                    <p><strong>Emergencias:</strong> +34 976 987 654</p>
+                    <br>
+                    
+                    <h3>✉️ Email</h3>
+                    <p><strong>General:</strong> info@zaragozaboxing.com</p>
+                    <p><strong>Clases:</strong> clases@zaragozaboxing.com</p>
+                    <p><strong>Competencias:</strong> competencias@zaragozaboxing.com</p>
+                </div>
+                <div class="contact-info">
+                    <h3>🕐 Horarios de Atención</h3>
+                    <div class="schedule-card" style="margin-bottom: 1rem;">
+                        <h4>Lunes a Viernes</h4>
+                        <p>6:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="schedule-card" style="margin-bottom: 1rem;">
+                        <h4>Sábados</h4>
+                        <p>7:00 AM - 8:00 PM</p>
+                    </div>
+                    <div class="schedule-card" style="margin-bottom: 1rem;">
+                        <h4>Domingos</h4>
+                        <p>8:00 AM - 6:00 PM</p>
+                    </div>
+                    
+                    <h3 style="margin-top: 2rem;">📱 Redes Sociales</h3>
+                    <p>📸 <strong>Instagram:</strong> @zaragozaboxing</p>
+                    <p>📘 <strong>Facebook:</strong> Zaragoza Boxing Oficial</p>
+                    <p>🐦 <strong>Twitter:</strong> @ZaragozaBoxing</p>
+                    <p>📺 <strong>YouTube:</strong> Zaragoza Boxing TV</p>
+                </div>
+            </div>
+        </section>
 
-<footer>
-    <p>&copy; 2025 Zaragoza Boxing. Todos los derechos reservados.</p>
-</footer>
+        <!-- Contact Form -->
+        <section class="section fade-in">
+            <h2>Envíanos un Mensaje</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="nombre" placeholder="Tu Nombre Completo" required>
+                    <input type="email" id="email" placeholder="Tu Email" required>
+                    <input type="tel" id="telefono" placeholder="Tu Teléfono">
+                    
+                    <select id="asunto" style="padding: 1rem; border: none; border-radius: 8px; background: rgba(255, 255, 255, 0.1); color: #fff; backdrop-filter: blur(10px); border: 1px solid rgba(255, 215, 0, 0.3);">
+                        <option value="">Selecciona el motivo de tu consulta</option>
+                        <option value="clase_prueba">Clase de prueba gratuita</option>
+                        <option value="informacion_clases">Información sobre clases</option>
+                        <option value="planes_precios">Planes y precios</option>
+                        <option value="entrenamiento_personal">Entrenamiento personal</option>
+                        <option value="competencias">Información sobre competencias</option>
+                        <option value="eventos">Eventos especiales</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    
+                    <textarea id="mensaje" placeholder="Tu Mensaje" rows="4" required></textarea>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>💡 ¿Qué Puedes Esperar?</h3>
+                    <div class="class-card">
+                        <p>✅ <strong>Respuesta rápida:</strong> Te contactaremos en menos de 24 horas</p>
+                    </div>
+                    <div class="class-card">
+                        <p>🎯 <strong>Asesoría personalizada:</strong> Te ayudaremos a encontrar el plan perfecto</p>
+                    </div>
+                    <div class="class-card">
+                        <p>🆓 <strong>Clase de prueba:</strong> Tu primera clase es completamente gratis</p>
+                    </div>
+                    <div class="class-card">
+                        <p>📋 <strong>Tour del gimnasio:</strong> Conoce nuestras instalaciones sin compromiso</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Map Section -->
+        <section class="section fade-in">
+            <h2>¿Cómo Llegar?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="class-title">🚗 En Automóvil</h3>
+                    <p>Estamos ubicados en el corazón de la ciudad, con fácil acceso desde cualquier punto. Contamos con estacionamiento gratuito para nuestros miembros.</p>
+                    
+                    <h3 class="class-title">🚌 Transporte Público</h3>
+                    <p>Líneas de autobús: 5, 12, 23, 45 - Parada: "Centro Deportivo"</p>
+                    <p>Metro: Línea A - Estación "Plaza Mayor" (5 min caminando)</p>
+                    
+                    <h3 class="class-title">🚶‍♂️ Referencias</h3>
+                    <p>• Frente al Banco Nacional</p>
+                    <p>• A 2 cuadras del Centro Comercial Plaza</p>
+                    <p>• Al lado de la Farmacia San Miguel</p>
+                </div>
+                <div class="about-image">
+                    <span>🗺️ Mapa de Ubicación<br>(Aquí iría el mapa interactivo)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section fade-in">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="schedule-grid">
+                <div class="schedule-card">
+                    <h3>❓ ¿Necesito experiencia previa?</h3>
+                    <p>No, para nada. Tenemos clases para todos los niveles, desde principiantes absolutos hasta boxeadores experimentados.</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>🥊 ¿Qué debo traer?</h3>
+                    <p>Solo ropa cómoda y una botella de agua. Nosotros proporcionamos guantes, vendas y todo el equipamiento necesario.</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>💰 ¿Cuánto cuesta la clase de prueba?</h3>
+                    <p>Tu primera clase es completamente GRATIS. Es nuestra forma de darte la bienvenida a la familia Zaragoza Boxing.</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>📅 ¿Cómo reservo una clase?</h3>
+                    <p>Puedes llamarnos, enviarnos un WhatsApp, un email, o llenar el formulario de esta página. ¡Es súper fácil!</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>👥 ¿Hay clases para mujeres?</h3>
+                    <p>¡Por supuesto! Tenemos clases específicamente diseñadas para mujeres, además de clases mixtas donde todos son bienvenidos.</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>🏆 ¿Puedo competir?</h3>
+                    <p>Absolutamente. Una vez que tengas la técnica y el nivel, te ayudamos a prepararte para competencias amateur y profesionales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact -->
+        <section class="section fade-in">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>🚨 Contacto de Emergencia</h3>
+                    <p>Si tienes una emergencia médica durante el entrenamiento, nuestro personal está capacitado en primeros auxilios.</p>
+                    <p><strong>Dr. Carlos Méndez (En gimnasio):</strong> +34 654 111 222</p>
+                    <p><strong>Servicios de Emergencia:</strong> 112</p>
+                </div>
+                <div class="contact-info">
+                    <h3>📋 Política de Cancelaciones</h3>
+                    <p>• Clases grupales: Cancelar con 2 horas de anticipación</p>
+                    <p>• Clases privadas: Cancelar con 24 horas de anticipación</p>
+                    <p>• Reembolsos: Según términos y condiciones</p>
+                    <p>• Congelamiento de membresía: Disponible por motivos médicos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section fade-in" style="text-align: center;">
+            <h2>¡No Esperes Más!</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                Da el primer paso hacia una nueva versión de ti mismo. Nuestro equipo está listo para recibirte con los brazos abiertos.
+            </p>
+            <a href="tel:+34976123456" class="cta-button">Llamar Ahora</a>
+            <a href="https://wa.me/34654321987" class="cta-button" target="_blank">WhatsApp</a>
+            <a href="clases.html" class="cta-button">Ver Nuestras Clases</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Zaragoza Boxing. Todos los derechos reservados.</p>
+            <p>Diseñado con ❤️ para los verdaderos guerreros</p>
+        </footer>
+    </div>
+
+    <script>
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const asunto = document.getElementById('asunto').value;
+            const mensaje = document.getElementById('mensaje').value;
+            
+            // Simple validation
+            if (!nombre || !email || !mensaje) {
+                alert('Por favor, completa todos los campos obligatorios.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, introduce un email válido.');
+                return;
+            }
+            
+            // Success message
+            alert(`¡Gracias ${nombre}! Tu mensaje ha sido enviado exitosamente. Te contactaremos pronto a ${email}.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Select styling for better UX
+        const select = document.getElementById('asunto');
+        select.addEventListener('focus', function() {
+            this.style.borderColor = '#ff6b6b';
+            this.style.boxShadow = '0 0 20px rgba(255, 107, 107, 0.3)';
+        });
+        
+        select.addEventListener('blur', function() {
+            this.style.borderColor = 'rgba(255, 215, 0, 0.3)';
+            this.style.boxShadow = 'none';
+        });
+    </script>
 </body>
 </html>

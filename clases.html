@@ -3,28 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clases - Zaragoza Boxing</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Puedes usar estilos comunes si lo deseas -->
+    <title>Clases y Horarios - Zaragoza Boxing</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="page-container">
+        <!-- Navigation -->
+        <nav class="navbar scrolled" id="navbar">
+            <div class="nav-container">
+                <div class="logo">Zaragoza Boxing</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobreNosotros.html">Nosotros</a></li>
+                    <li><a href="clases.html">Clases</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
 
-<header>
-    <h1>Clases</h1>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="sobre_nosotros.html">Sobre Nosotros</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-</header>
+        <!-- Hero Section -->
+        <section class="hero" style="height: 60vh;">
+            <div class="hero-content">
+                <h1 style="font-size: 3rem;">Nuestras Clases</h1>
+                <p>Encuentra el entrenamiento perfecto para ti</p>
+            </div>
+        </section>
 
-<section>
-    <h2>Nuestras Clases</h2>
-    <p>Ofrecemos clases grupales e individuales, adaptadas a tus necesidades. ¡Ven a probar una clase gratuita!</p>
-</section>
+        <!-- Schedule Overview -->
+        <section class="section fade-in">
+            <h2>Horarios de Entrenamiento</h2>
+            <div class="schedule-grid">
+                <div class="schedule-card">
+                    <h3>🌅 Sesión Matutina</h3>
+                    <div class="time-slot">7:00 - 8:30 AM</div>
+                    <div class="time-slot">8:00 - 9:30 AM</div>
+                    <p>Entrenamientos intensivos para comenzar el día con energía. Perfectos para quienes prefieren ejercitarse temprano.</p>
+                    <div class="instructor">Instructor: Miguel Zaragoza</div>
+                </div>
+                <div class="schedule-card">
+                    <h3>🌆 Sesión Vespertina</h3>
+                    <div class="time-slot">6:00 - 7:30 PM</div>
+                    <div class="time-slot">7:00 - 8:30 PM</div>
+                    <p>Ideales para después del trabajo o estudio. Nuestras sesiones más populares con gran ambiente grupal.</p>
+                    <div class="instructor">Instructora: Ana Rodríguez</div>
+                </div>
+                <div class="schedule-card">
+                    <h3>⭐ Fines de Semana</h3>
+                    <div class="time-slot">Sábados: 9:00 - 11:00 AM</div>
+                    <div class="time-slot">Domingos: 10:00 - 12:00 PM</div>
+                    <p>Entrenamientos especiales de fin de semana con actividades grupales y competencias amistosas.</p>
+                    <div class="instructor">Instructor: Luis "El Tigre" Vega</div>
+                </div>
+            </div>
+        </section>
 
-<footer>
-    <p>&copy; 2025 Zaragoza Boxing. Todos los derechos reservados.</p>
-</footer>
+        <!-- Class Types -->
+        <section class="section fade-in">
+            <h2>Tipos de Clases</h2>
+            
+            <div class="class-card">
+                <h3 class="class-title">🥊 Boxeo Básico</h3>
+                <p class="class-description">
+                    Perfecto para principiantes que quieren aprender los fundamentos del boxeo. Cubrimos stance, movimientos básicos, técnicas de golpeo y defensa. No se requiere experiencia previa.
+                </p>
+                <div class="instructor">Instructor: Ana Rodríguez</div>
+                <div class="class-schedule">
+                    <strong>Horarios:</strong> Lunes, Miércoles, Viernes - 7:00 AM y 6:00 PM
+                </div>
+            </div>
 
+            <div class="class-card">
+                <h3 class="class-title">🔥 Boxeo Intermedio</h3>
+                <p class="class-description">
+                    Para quienes ya dominan lo básico y quieren perfeccionar su técnica. Incluye combinaciones avanzadas, trabajo de pads, y acondicionamiento específico.
+                </p>
+                <div class="instructor">Instructor: Miguel Zaragoza</div>
+                <div class="class-schedule">
+                    <strong>Horarios:</strong> Martes, Jueves - 8:00 AM y 7:00 PM
+                </div>
+            </div>
+
+            <div class="class-card">
+                <h3 class="class-title">⚡ Boxeo Avanzado</h3>
+                <p class="class-description">
+                    Nivel competitivo para boxeadores experimentados. Incluye sparring controlado, estrategias de pelea, y preparación para competencias.
+                </p>
+                <div class="instructor">Instructor: Luis "El Tigre" Vega</div>
+                <div class="class-schedule">
+                    <strong>Horarios:</strong> Lunes, Miércoles, Viernes - 8:30 AM y 7:30 PM
+                </div>
+            </div>
+
+            <div class="class-card">
+                <h3 class="class-title">💪 Acondicionamiento Físico</h3>
+                <p class="class-description">
+                    Entrenamiento funcional específico para boxeadores. Fortalecimiento del core, cardio intensivo, y ejercicios de resistencia.
+                </p>
+                <div class="instructor">Preparador: Dr. Carlos Méndez</div>
+                <div class="class-schedule">
+                    <strong>Horarios:</strong> Martes, Jueves - 7:30 AM y 6:30 PM
+                </div>
+            </div>
+
+            <div class="class-card">
+                <h3 class="class-title">👩‍🦰 Boxeo Femenino</h3>
+                <p class="class-description">
+                    Clases diseñadas específicamente para mujeres en un ambiente cómodo y motivador. Enfoque en autodefensa, fitness y empoderamiento.
+                </p>
+                <div class="instructor">Instructora: Ana Rodríguez</div>
+                <div class="class-schedule">
+                    <strong>Horarios:</strong> Lunes, Miércoles, Viernes - 6:30 PM
+                </div>
+            </div>
+
+            <div class="class-card">
+                <h3 class="class-title">🧒 Boxeo Juvenil</h3>
+                <p class="class-description">
+                    Para jóvenes de 12-17 años. Enfoque en disciplina, respeto, técnica básica y desarrollo del carácter a través del boxeo.
+                </p>
+                <div class="instructor">Instructor: Miguel Zaragoza</div>
+                <div class="class-schedule">
+                    <strong>Horarios:</strong> Sábados - 9:00 AM / Domingos - 10:00 AM
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Programs -->
+        <section class="section fade-in">
+            <h2>Programas Especiales</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div style="text-align: center; padding: 2rem;">
+                        <span style="font-size: 3rem;">🏆</span>
+                        <h3 style="margin: 1rem 0;">Entrenamiento Competitivo</h3>
+                        <p>Preparación para competencias amateur y profesionales</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="text-align: center; padding: 2rem;">
+                        <span style="font-size: 3rem;">👥</span>
+                        <h3 style="margin: 1rem 0;">Clases Privadas</h3>
+                        <p>Entrenamiento personalizado uno a uno con nuestros instructores</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="text-align: center; padding: 2rem;">
+                        <span style="font-size: 3rem;">🎯</span>
+                        <h3 style="margin: 1rem 0;">Autodefensa</h3>
+                        <p>Técnicas prácticas de autodefensa usando principios del boxeo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="text-align: center; padding: 2rem;">
+                        <span style="font-size: 3rem;">🏢</span>
+                        <h3 style="margin: 1rem 0;">Clases Corporativas</h3>
+                        <p>Programas especiales para empresas y equipos de trabajo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="section fade-in">
+            <h2>Planes y Precios</h2>
+            <div class="schedule-grid">
+                <div class="schedule-card">
+                    <h3>💎 Plan Básico</h3>
+                    <div style="font-size: 2rem; color: #ffd700; margin: 1rem 0;">$500</div>
+                    <p>Por mes</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>8 clases al mes</li>
+                        <li>Acceso a clases básicas</li>
+                        <li>Uso de equipamiento básico</li>
+                        <li>1 clase de prueba gratis</li>
+                    </ul>
+                </div>
+                <div class="schedule-card">
+                    <h3>🔥 Plan Premium</h3>
+                    <div style="font-size: 2rem; color: #ffd700; margin: 1rem 0;">$800</div>
+                    <p>Por mes</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Clases ilimitadas</li>
+                        <li>Todas las clases disponibles</li>
+                        <li>Acceso completo al gimnasio</li>
+                        <li>2 clases privadas incluidas</li>
+                    </ul>
+                </div>
+                <div class="schedule-card">
+                    <h3>⭐ Plan Anual</h3>
+                    <div style="font-size: 2rem; color: #ffd700; margin: 1rem 0;">$7,200</div>
+                    <p>Por año (2 meses gratis)</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Todos los beneficios Premium</li>
+                        <li>Programa personalizado</li>
+                        <li>Acceso a eventos especiales</li>
+                        <li>Descuentos en merchandise</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section fade-in" style="text-align: center;">
+            <h2>¿Listo para Comenzar?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                Reserva tu clase de prueba gratuita y descubre por qué somos el mejor gimnasio de boxeo de la región.
+            </p>
+            <a href="contacto.html" class="cta-button">Reservar Clase de Prueba</a>
+            <a href="sobreNosotros.html" class="cta-button">Conoce Nuestro Equipo</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Zaragoza Boxing. Todos los derechos reservados.</p>
+            <p>Diseñado con ❤️ para los verdaderos guerreros</p>
+        </footer>
+    </div>
+
+    <script>
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
