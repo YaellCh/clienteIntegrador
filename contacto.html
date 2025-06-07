@@ -29,7 +29,7 @@
         <section class="hero" style="height: 60vh;">
             <div class="hero-content">
                 <h1 style="font-size: 3rem;">Contáctanos</h1>
-                <p>¡Estamos aquí para ayudarte a comenzar tu journey!</p>
+                <p>¡Estamos aquí para ayudarte a comenzar!</p>
             </div>
         </section>
 
@@ -39,42 +39,33 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>📍 Ubicación</h3>
-                    <p><strong>Dirección:</strong> Av. Principal #123, Colonia Centro</p>
-                    <p><strong>Ciudad:</strong> Zaragoza, España</p>
-                    <p><strong>Código Postal:</strong> 50001</p>
+                    <p><strong>Dirección:</strong> Rodríguez Puebla, Centro, 42733 Ejido del Centro, Hgo.</p>
+                    <p><strong>Ciudad:</strong> Progreso de Obregón Hidalgo</p>
+                    <p><strong> Código Postal:</strong>42733</p>
                     <br>
                     
-                    <h3>📞 Teléfonos</h3>
-                    <p><strong>Principal:</strong> +34 976 123 456</p>
-                    <p><strong>WhatsApp:</strong> +34 654 321 987</p>
-                    <p><strong>Emergencias:</strong> +34 976 987 654</p>
+                    <h3>📞 Teléfono</h3>
+                    <p><strong>WhatsApp:</strong> +52 771 347 7038</p>
+                    <p><strong>Personal:</strong> +52 772 145 8137</p>
                     <br>
                     
                     <h3>✉️ Email</h3>
-                    <p><strong>General:</strong> info@zaragozaboxing.com</p>
-                    <p><strong>Clases:</strong> clases@zaragozaboxing.com</p>
-                    <p><strong>Competencias:</strong> competencias@zaragozaboxing.com</p>
+                    <p><strong>General:</strong> zaragozabozing@gmail.com</p>
                 </div>
                 <div class="contact-info">
                     <h3>🕐 Horarios de Atención</h3>
                     <div class="schedule-card" style="margin-bottom: 1rem;">
                         <h4>Lunes a Viernes</h4>
-                        <p>6:00 AM - 10:00 PM</p>
+                        <p>7:00 AM - 9:00 PM</p>
                     </div>
                     <div class="schedule-card" style="margin-bottom: 1rem;">
                         <h4>Sábados</h4>
-                        <p>7:00 AM - 8:00 PM</p>
-                    </div>
-                    <div class="schedule-card" style="margin-bottom: 1rem;">
-                        <h4>Domingos</h4>
                         <p>8:00 AM - 6:00 PM</p>
                     </div>
                     
                     <h3 style="margin-top: 2rem;">📱 Redes Sociales</h3>
-                    <p>📸 <strong>Instagram:</strong> @zaragozaboxing</p>
-                    <p>📘 <strong>Facebook:</strong> Zaragoza Boxing Oficial</p>
-                    <p>🐦 <strong>Twitter:</strong> @ZaragozaBoxing</p>
-                    <p>📺 <strong>YouTube:</strong> Zaragoza Boxing TV</p>
+                    <p>📸 <strong>Instagram:</strong> zaragozaboxing</p>
+                    <p>📘 <strong>Facebook:</strong> Zaragozaboxing</p>
                 </div>
             </div>
         </section>
@@ -83,23 +74,27 @@
         <section class="section fade-in">
             <h2>Envíanos un Mensaje</h2>
             <div class="contact-content">
-                <form class="contact-form" id="contactForm">
-                    <input type="text" id="nombre" placeholder="Tu Nombre Completo" required>
-                    <input type="email" id="email" placeholder="Tu Email" required>
-                    <input type="tel" id="telefono" placeholder="Tu Teléfono">
+                <form class="contact-form" action="https://formspree.io/f/meokekpw" method="POST" id="contactForm">
+                    <input type="text" name="name" id="nombre" placeholder="Tu Nombre Completo" required>
+                    <input type="email" name="email" id="email" placeholder="Tu Email" required>
+                    <input type="tel" name="phone" id="telefono" placeholder="Tu Teléfono">
                     
-                    <select id="asunto" style="padding: 1rem; border: none; border-radius: 8px; background: rgba(255, 255, 255, 0.1); color: #fff; backdrop-filter: blur(10px); border: 1px solid rgba(255, 215, 0, 0.3);">
+                    <select name="subject" id="asunto" style="padding: 1rem; border: none; border-radius: 8px; background: rgba(255, 255, 255, 0.1); color: #fff; backdrop-filter: blur(10px); border: 1px solid rgba(255, 215, 0, 0.3);">
                         <option value="">Selecciona el motivo de tu consulta</option>
-                        <option value="clase_prueba">Clase de prueba gratuita</option>
+                        <option value="clase_prueba">Clase de prueba</option>
                         <option value="informacion_clases">Información sobre clases</option>
-                        <option value="planes_precios">Planes y precios</option>
+                        <option value="planes_precios">Precios</option>
                         <option value="entrenamiento_personal">Entrenamiento personal</option>
                         <option value="competencias">Información sobre competencias</option>
-                        <option value="eventos">Eventos especiales</option>
                         <option value="otro">Otro</option>
                     </select>
                     
-                    <textarea id="mensaje" placeholder="Tu Mensaje" rows="4" required></textarea>
+                    <textarea name="message" id="mensaje" placeholder="Tu Mensaje" rows="4" required></textarea>
+                    
+                    <!-- Campos ocultos para Formspree -->
+                    <input type="hidden" name="_subject" value="Nuevo cliente interesado - Zaragoza Boxing">
+                    <input type="hidden" name="_captcha" value="false">
+                    
                     <button type="submit" class="submit-btn">Enviar Mensaje</button>
                 </form>
                 
@@ -112,10 +107,7 @@
                         <p>🎯 <strong>Asesoría personalizada:</strong> Te ayudaremos a encontrar el plan perfecto</p>
                     </div>
                     <div class="class-card">
-                        <p>🆓 <strong>Clase de prueba:</strong> Tu primera clase es completamente gratis</p>
-                    </div>
-                    <div class="class-card">
-                        <p>📋 <strong>Tour del gimnasio:</strong> Conoce nuestras instalaciones sin compromiso</p>
+                        <p>🆓 <strong>Clase de prueba:</strong> En tu primera clase estamos contigo todo el tiempo </p>
                     </div>
                 </div>
             </div>
@@ -127,21 +119,30 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3 class="class-title">🚗 En Automóvil</h3>
-                    <p>Estamos ubicados en el corazón de la ciudad, con fácil acceso desde cualquier punto. Contamos con estacionamiento gratuito para nuestros miembros.</p>
+                    <p>Estamos ubicados en el corazón de Progreso de Obregón Hidalgo, con fácil acceso desde cualquier punto. Contamos con estacionamiento gratuito para nuestros miembros.</p>
                     
                     <h3 class="class-title">🚌 Transporte Público</h3>
-                    <p>Líneas de autobús: 5, 12, 23, 45 - Parada: "Centro Deportivo"</p>
-                    <p>Metro: Línea A - Estación "Plaza Mayor" (5 min caminando)</p>
+                    <p>Toma cualquier autobús a Progreso. Parada: "Bicentenario progreso de obregon"</p>
                     
                     <h3 class="class-title">🚶‍♂️ Referencias</h3>
-                    <p>• Frente al Banco Nacional</p>
-                    <p>• A 2 cuadras del Centro Comercial Plaza</p>
-                    <p>• Al lado de la Farmacia San Miguel</p>
+                    <p>• Zagúan color blanco, entras y nos encontaras!</p>
+                    <p>• A 2 cuadras de la unidad deportiva de Progreso</p>
+                    <p>• Al lado de la Iglesia Sinaí</p>
                 </div>
                 <div class="about-image">
-                    <span>🗺️ Mapa de Ubicación<br>(Aquí iría el mapa interactivo)</span>
-                </div>
-            </div>
+    <div class="simple-map-container" style="overflow: hidden; border-radius: 15px;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.255846104671!2d-99.18324729999999!3d20.2482214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d17d646668343d%3A0x6f00b776538e2e92!2sCentro%20De%20Convenciones%20Bicentenario%20Progreso%20De%20Obregon%20Hidalgo!5e0!3m2!1ses-419!2smx!4v1749241370365!5m2!1ses-419!2smx" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Mapa de ubicación - Zaragoza Boxing">
+        </iframe>
+    </div>
+</div>
         </section>
 
         <!-- FAQ Section -->
@@ -150,15 +151,11 @@
             <div class="schedule-grid">
                 <div class="schedule-card">
                     <h3>❓ ¿Necesito experiencia previa?</h3>
-                    <p>No, para nada. Tenemos clases para todos los niveles, desde principiantes absolutos hasta boxeadores experimentados.</p>
+                    <p>No, para nada. Tenemos clases para todos los niveles, desde principiantes absolutos hasta boxeadores con experiencia.</p>
                 </div>
                 <div class="schedule-card">
                     <h3>🥊 ¿Qué debo traer?</h3>
                     <p>Solo ropa cómoda y una botella de agua. Nosotros proporcionamos guantes, vendas y todo el equipamiento necesario.</p>
-                </div>
-                <div class="schedule-card">
-                    <h3>💰 ¿Cuánto cuesta la clase de prueba?</h3>
-                    <p>Tu primera clase es completamente GRATIS. Es nuestra forma de darte la bienvenida a la familia Zaragoza Boxing.</p>
                 </div>
                 <div class="schedule-card">
                     <h3>📅 ¿Cómo reservo una clase?</h3>
@@ -167,29 +164,6 @@
                 <div class="schedule-card">
                     <h3>👥 ¿Hay clases para mujeres?</h3>
                     <p>¡Por supuesto! Tenemos clases específicamente diseñadas para mujeres, además de clases mixtas donde todos son bienvenidos.</p>
-                </div>
-                <div class="schedule-card">
-                    <h3>🏆 ¿Puedo competir?</h3>
-                    <p>Absolutamente. Una vez que tengas la técnica y el nivel, te ayudamos a prepararte para competencias amateur y profesionales.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Emergency Contact -->
-        <section class="section fade-in">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>🚨 Contacto de Emergencia</h3>
-                    <p>Si tienes una emergencia médica durante el entrenamiento, nuestro personal está capacitado en primeros auxilios.</p>
-                    <p><strong>Dr. Carlos Méndez (En gimnasio):</strong> +34 654 111 222</p>
-                    <p><strong>Servicios de Emergencia:</strong> 112</p>
-                </div>
-                <div class="contact-info">
-                    <h3>📋 Política de Cancelaciones</h3>
-                    <p>• Clases grupales: Cancelar con 2 horas de anticipación</p>
-                    <p>• Clases privadas: Cancelar con 24 horas de anticipación</p>
-                    <p>• Reembolsos: Según términos y condiciones</p>
-                    <p>• Congelamiento de membresía: Disponible por motivos médicos</p>
                 </div>
             </div>
         </section>
@@ -200,15 +174,14 @@
             <p style="font-size: 1.2rem; margin-bottom: 2rem;">
                 Da el primer paso hacia una nueva versión de ti mismo. Nuestro equipo está listo para recibirte con los brazos abiertos.
             </p>
-            <a href="tel:+34976123456" class="cta-button">Llamar Ahora</a>
-            <a href="https://wa.me/34654321987" class="cta-button" target="_blank">WhatsApp</a>
+            <a href="https://wa.me/527713477038" class="cta-button" target="_blank">WhatsApp</a>
             <a href="clases.html" class="cta-button">Ver Nuestras Clases</a>
         </section>
 
         <!-- Footer -->
         <footer class="footer">
             <p>&copy; 2024 Zaragoza Boxing. Todos los derechos reservados.</p>
-            <p>Diseñado con ❤️ para ZaragozaBoxing</p>
+            <p>Diseñado con ❤️ para los verdaderos guerreros</p>
         </footer>
     </div>
 
@@ -231,11 +204,9 @@
             observer.observe(el);
         });
 
-        // Form submission
+        // Form submission with Formspree
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
+            // Get form values for validation
             const nombre = document.getElementById('nombre').value;
             const email = document.getElementById('email').value;
             const telefono = document.getElementById('telefono').value;
@@ -244,6 +215,7 @@
             
             // Simple validation
             if (!nombre || !email || !mensaje) {
+                e.preventDefault();
                 alert('Por favor, completa todos los campos obligatorios.');
                 return;
             }
@@ -251,15 +223,16 @@
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
+                e.preventDefault();
                 alert('Por favor, introduce un email válido.');
                 return;
             }
             
-            // Success message
-            alert(`¡Gracias ${nombre}! Tu mensaje ha sido enviado exitosamente. Te contactaremos pronto a ${email}.`);
-            
-            // Reset form
-            this.reset();
+            // If validation passes, the form will submit to Formspree
+            // Show temporary feedback
+            const submitBtn = document.querySelector('.submit-btn');
+            submitBtn.textContent = 'Enviando...';
+            submitBtn.disabled = true;
         });
 
         // Select styling for better UX

@@ -619,10 +619,184 @@ body {
         padding: 0.3rem;
     }
     
-    .about-image img {
-        width: 100%;
-        height: 100%;
+.about-image {
+    background: none !important;
+    height: auto !important;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    animation: none !important;
+    overflow: visible;
+    position: relative;
+    padding: 0;
+}
+
+.simple-map-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.simple-map {
+    display: block;
+    width: 100%;
+    height: 300px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.simple-map:hover {
+    transform: scale(1.02);
+}
+
+.map-background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+    position: relative;
+    overflow: hidden;
+}
+
+.horizontal-street {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.vertical-street {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 8px;
+    height: 100%;
+    background: white;
+    box-shadow: 1px 0 3px rgba(0,0,0,0.2);
+}
+
+.red-pin {
+    position: absolute;
+    top: 45%;
+    left: 32%;
+    width: 20px;
+    height: 20px;
+    background: #dc143c;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(220, 20, 60, 0.5);
+    animation: simplePulse 2s infinite;
+    z-index: 10;
+}
+
+.street-label {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    color: #555;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 5;
+}
+
+.label-progreso {
+    bottom: 20%;
+    left: 10%;
+}
+
+.label-tito {
+    top: 30%;
+    left: 5%;
+}
+
+.label-independencia {
+    top: 15%;
+    right: 15%;
+}
+
+.location-box {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    background: white;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    line-height: 1.3;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border-left: 4px solid #dc143c;
+    z-index: 8;
+}
+
+.location-box strong {
+    color: #dc143c;
+    font-size: 12px;
+}
+
+.landmark-box {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #dc143c;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border: 2px solid #dc143c;
+    line-height: 1.2;
+    z-index: 6;
+}
+
+@keyframes simplePulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
     }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .simple-map {
+        height: 250px;
+    }
+    
+    .street-label {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    
+    .location-box {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+    
+    .landmark-box {
+        font-size: 9px;
+        padding: 4px 6px;
+    }
+}
     
     .gallery-grid {
         grid-template-columns: 1fr;
